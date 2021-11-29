@@ -1,0 +1,9 @@
+npm init -y //Crear package.json para nodejs
+npm i express -S //Instalar express y anadirla en dependencies de package.json, se creara el node_modules y package-lock.json
+npm i socket.io -S
+
+node server/main.js //Correr servidor
+
+npm i nodemon -D //Instalar nodemon y anadirla en DevDependencies de package.json
+
+"start": "nodemon server/main.js" //En "scripts" de package.json anadir para que al ejecutar npm start nodemon reinicie automaticamente el servidor cuando hayan cambios para evitar ejecutar node main.js por cada cambio realizado en el codigo

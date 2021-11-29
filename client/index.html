@@ -1,0 +1,22 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>SOCKETS</title>
+        <!--script src="socket.io/socket.io.js"></script-->
+        <script src="http://localhost:8081/socket.io/socket.io.js"></script>
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <h1>CHAT</h1>
+
+        <div id="mensajes"></div>
+        
+        <br>
+
+        <form onsubmit="return addMensaje(this);">
+            <input type="text" id="autor" placeholder="Autor">
+            <input type="text" id="mensaje" placeholder="Mensaje">
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
